@@ -2,10 +2,8 @@
 import random
 number = random.randint(-10000, 10000)
 number_string = str(number)
-
 last_number = number_string[-1]
 last_number = int(last_number)
-
 if number < 0:
     last_number_sign = last_number * -1
 else:
