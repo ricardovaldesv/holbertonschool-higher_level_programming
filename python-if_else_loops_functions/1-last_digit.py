@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-number_string = str(number)
-last_number = number_string[-1]
-last_number = int(last_number)
+last_number = abs(number) % 10
+
 if number < 0:
     last_number_sign = last_number * -1
 else:
     last_number_sign = last_number
+
 if last_number_sign > 5:
     print(f'Last digit of {number} is {last_number_sign} and is\
  greater than 5')
