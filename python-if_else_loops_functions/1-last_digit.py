@@ -11,8 +11,10 @@ if number < 0:
 else:
     last_number_sign = last_number
 if last_number_sign > 5:
-    print(f'Last digit of {number} is {last_number_sign} and is greater than 5')
+    print(f'Last digit of {number} is {last_number_sign} and is\
+ greater than 5')
 elif last_number_sign == 0:
     print(f'Last digit of {number} is {last_number_sign} and is 0')
 else:
-   print(f'Last digit of {number} is {last_number_sign} and is less than 6 and not 0')
+    print(f'Last digit of {number} is {last_number_sign} and is\
+ less than 6 and not 0')
