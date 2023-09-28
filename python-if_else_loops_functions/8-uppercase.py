@@ -9,4 +9,4 @@ def uppercase(str):    # prints a string in uppercase followed by a new line.
         else:
             c = str[i]
         print("{}".format(c), end='')
-    print("") 
+    print("{}".format("\n"), end='') 
