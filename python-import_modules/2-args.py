@@ -7,6 +7,8 @@ def func():
     arguments = len(sys.argv)
     if arguments == 2:
         print("{0} {1}".format(arguments - 1, 'argument:'))
+    elif arguments == 1:
+    	print("{0} {1}".format(arguments - 1, 'arguments.'))
     else:
         print("{0} {1}".format(arguments - 1, 'arguments:'))
 
