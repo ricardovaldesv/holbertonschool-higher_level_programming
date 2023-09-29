@@ -3,4 +3,5 @@
 import variable_load_5
 
 if __name__ == "__main__":
-    print(variable_load_5.a)
+    variable = variable_load_5.a
+    print("{}".format(variable))
