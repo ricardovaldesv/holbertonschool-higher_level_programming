@@ -8,7 +8,7 @@ def func():
     if arguments == 2:
         print("{0} {1}".format(arguments - 1, 'argument:'))
     elif arguments == 1:
-    	print("{0} {1}".format(arguments - 1, 'arguments.'))
+        print("{0} {1}".format(arguments - 1, 'arguments.'))
     else:
         print("{0} {1}".format(arguments - 1, 'arguments:'))
 
