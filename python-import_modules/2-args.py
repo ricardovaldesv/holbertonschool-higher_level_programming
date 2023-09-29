@@ -2,6 +2,7 @@
 
 import sys
 
+
 def func():
     arguments = len(sys.argv)
     if arguments == 2:
@@ -11,6 +12,7 @@ def func():
 
     for i in range(1, arguments):
         print("{0}: {1}".format(i, sys.argv[i]))
+
 
 if __name__ == "__main__":
     func()
