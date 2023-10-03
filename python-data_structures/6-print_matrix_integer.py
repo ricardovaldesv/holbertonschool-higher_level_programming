@@ -10,4 +10,4 @@ def print_matrix_integer(matrix=[[]]):
                 print('{} '.format(matrix[i][j]), end='')
             flag = 1
     if flag == 0:
-        print('{}'.format('d'))
+        print('{}'.format(''))
