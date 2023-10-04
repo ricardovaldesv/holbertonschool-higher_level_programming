@@ -8,5 +8,6 @@ def print_matrix_integer(matrix=[[]]):
                 print('{:d}'.format(matrix[i][j]))
             else:
                 print('{:d} '.format(matrix[i][j]), end='')
+            flag = 1
     if flag == 0:
         print("{}".format(""))
