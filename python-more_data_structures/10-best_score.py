@@ -4,9 +4,8 @@ def best_score(a_dictionary):
     if a_dictionary is None:
         return None
     else:
-        items_sorted = sorted(a_dictionary.items())
-        items_sorted.reverse()
-        inverse_dict = dict(items_sorted)
-        for key, value in inverse_dict.items():
+        s_dict = sorted(a_dictionary.items(), key=lambda x: x[1], reverse=True)
+
+        for key, value in s_dict:
             return key
             break
