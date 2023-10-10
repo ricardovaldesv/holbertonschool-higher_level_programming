@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-"""Represent a Square."""
+"""Class Square that defines a square by: (based on 0-square.py)."""
 
 
 class Square:
-    """Represent a Square."""
-    __size = None
+    """Private instance attribute: size."""
+    def __init__(self, size=0):
+        self.__size = size
