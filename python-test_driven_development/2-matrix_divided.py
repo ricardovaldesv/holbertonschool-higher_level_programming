@@ -9,10 +9,6 @@ def matrix_divided(matrix, div):
     Function that divides all elements of a matrix.
     """
 
-    if type(matrix) is not list or matrix == []:
-        raise TypeError("matrix must be a matrix (list of lists)"
-                        " of integers/floats")
-
     for i in range(len(matrix)):
         for j in range(len(matrix[i])):
             if type(matrix[i][j]) not in [int, float]:
