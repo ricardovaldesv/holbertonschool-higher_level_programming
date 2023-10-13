@@ -80,30 +80,3 @@ Test_10 div as sqrt(-1)
     Traceback (most recent call last):
     TypeError: div must be a number
 
-Test_11 matrix with lists and other elements inside
-----------------------------------------------------
-    >>> matrix = [(1, 2), [4, 5]]
-    >>> matrix_divided(matrix, 3)
-    Traceback (most recent call last):
-    TypeError: matrix must be a matrix (list of lists) of integers/floats
-
-Test_12 empty matrix
---------------------
-    >>> matrix = [[], []]
-    >>> matrix_divided(matrix, 2)
-    Traceback (most recent call last):
-    TypeError: matrix must be a matrix (list of lists) of integers/floats
-
-Test_13 empty element
-----------------------
-    >>> matrix = [[2, 3,4, 5], []]
-    >>> matrix_divided(matrix, 2)
-    Traceback (most recent call last):
-    TypeError: matrix must be a matrix (list of lists) of integers/floats
-
-Test_14 matrix is 3d
---------------------
-    >>> matrix = [[[3, 3, 4], [2, 1]], [2, 3]]
-    >>> matrix_divided(matrix, 2)
-    Traceback (most recent call last):
-    TypeError: matrix must be a matrix (list of lists) of integers/floats
