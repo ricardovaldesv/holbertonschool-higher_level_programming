@@ -1,0 +1,63 @@
+ ``0-add_integer`` module test
+=============================
+
+Using ``add_integer`` function
+-------------------------------
+
+This text file contains test cases for the function ``add_integer``.
+First import function to the varaible add_integer:
+    
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+    Now use it:
+
+    Test_1 adding two integers
+    --------------------------
+
+    >>> add_integer(1, 2)
+    3
+
+    Test_2 adding one integer
+    -------------------------
+    >>> add_integer(5)
+    103
+
+    Test_3 adding two negative integer
+    ----------------------------------
+    >>> add_integer(-3, -7)
+    -10
+
+    Test_4 adding two floats
+    ------------------------
+    >>> add_integer(2.5, 3.5)
+    5
+
+    Test_5 adding string and integer
+    --------------------------------
+    >>> add_integer('richard', 3)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    Test_6 adding integer and string
+    --------------------------------
+    >>> add_integer(1, 's')
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+    Test_7 adding strings
+    ---------------------
+    >>> add_integer('d', 's')
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    Test_8 adding one string
+    ------------------------
+    >>> add_integer('home')
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    Test_9 with out
+    ------------------------
+    >>> add_integer()
+    Traceback (most recent call last):
+    TypeError: add_integer() missing 1 required positional argument: 'a'
