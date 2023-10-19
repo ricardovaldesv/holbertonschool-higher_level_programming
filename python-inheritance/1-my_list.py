@@ -11,5 +11,5 @@ class MyList(list):
         """Method that prints the list, but sorted (ascending sort)
             Args:
                 Dont have arguments
-        """ 
+        """
         print(sorted(self))
