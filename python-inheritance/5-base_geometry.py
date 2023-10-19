@@ -2,7 +2,7 @@
 """This file contain a class empty"""
 
 
-def BaseGeometry:
+class BaseGeometry:
     """class empty
     """
     pass
