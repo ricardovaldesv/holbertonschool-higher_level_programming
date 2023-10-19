@@ -30,8 +30,12 @@ class BaseGeometry:
             raise ValueError(f"{name} must be greater than 0")
 
 
-class Rectangle(BaseGeometry):
+"""This file contain a class Rectangle that inherits of BaseGeometry"""
 
+
+class Rectangle(BaseGeometry):
+    """function
+        """
     def __init__(self, width, height):
 
         self.integer_validator("width", width)
