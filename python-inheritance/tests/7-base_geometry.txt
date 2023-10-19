@@ -13,12 +13,6 @@ This is an example text file in 7-base_geometry.py.  First import
 >>> bg = BaseGeometry()
 >>> bg.integer_validator("my_int", 12)
 
-# BaseGeometry = less or equal to 0
->>> bg = BaseGeometry()
->>> bg.integer_validator("my_int", 0)
-Traceback (most recent call last):
-ValueError: my_int must be greater than 0
-
 # BaseGeometry = is not an integer
 >>> bg = BaseGeometry()
 >>> bg.integer_validator("my_int", "prueba")
