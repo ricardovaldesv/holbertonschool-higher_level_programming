@@ -3,6 +3,3 @@
 
 
 def BaseGeometry():
-    """class empty
-    """
-
