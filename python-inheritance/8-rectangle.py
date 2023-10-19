@@ -1,8 +1,6 @@
 #!/usr/bin/python3
-
+"""module based of 7-base_geometry.py"""
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
-
-"""This file contain a class empty"""
 
 
 class Rectangle(BaseGeometry):
