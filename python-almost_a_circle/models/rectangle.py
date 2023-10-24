@@ -21,9 +21,9 @@ class Rectangle(Base):
         return self.__width
 
     @width.setter
-    def width(self, value):
+    def width(self, width):
         """Setter to update with"""
-        self.__width = value
+        self.__width = width
 
     @property
     def height(self):
@@ -31,9 +31,9 @@ class Rectangle(Base):
         return self.__height
 
     @height.setter
-    def height(self, value):
+    def height(self, height):
         """Setter to update heihgt"""
-        self.__width = value
+        self.__height = height
 
     @property
     def x(self):
@@ -41,9 +41,9 @@ class Rectangle(Base):
         return self.__x
 
     @x.setter
-    def x(self, value):
+    def x(self, x):
         """Setter to update x"""
-        self.__width = value
+        self.__x = x
 
     @property
     def y(self):
@@ -51,6 +51,6 @@ class Rectangle(Base):
         return self.__y
 
     @y.setter
-    def y(self, value):
+    def y(self, y):
         """Setter to update y"""
-        self.__width = value
+        self.__y = y
