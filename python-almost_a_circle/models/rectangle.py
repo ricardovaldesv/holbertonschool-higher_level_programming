@@ -90,3 +90,10 @@ class Rectangle(Base):
         print("\n" * self.__y, end="")
         for i in range(self.__height):
             print(" " * self.__x + "#" * self.__width)
+
+    def update(self, *args):
+        """Function that assigns an argument to each attribute"""
+        names = ["id", "width", "height", "x", "y"]
+        if args is not () and args is not None:
+            for value, name in zip(args, names):
+                setattr(self, name, value)
