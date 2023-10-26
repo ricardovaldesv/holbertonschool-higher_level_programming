@@ -56,3 +56,14 @@ class Base:
         else:
             dictionaries = []
             return dictionaries
+
+    @classmethod
+    def create(cls, **dictionary):
+        """Returns an instance with all attributes already set.
+
+        Args:
+            ** dictionary: dictionary of an instance
+        """
+        dummy = cls(1, 1) if cls.__name__ == "Rectangle" else cls(1)
+        dummy.update(**dictionary)
+        return dummy
