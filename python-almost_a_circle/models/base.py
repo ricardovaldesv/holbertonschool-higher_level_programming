@@ -42,3 +42,17 @@ class Base:
                 list_dicts_python.append(lst.to_dictionary())
         with open(class_name, "w+", encoding="utf-8") as a_file:
             a_file.write(cls.to_json_string(list_dicts_python))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """Returns the list of the JSON string representation json_string.
+
+        Args:
+            json_string: list of the JSON string
+        """
+
+        if json_string is not () and json_string is not None:
+            return json.loads(json_string)
+        else:
+            dictionaries = []
+            return dictionaries
