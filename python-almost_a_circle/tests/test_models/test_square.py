@@ -158,5 +158,15 @@ class TestDocs(unittest.TestCase):
             self.assertTrue(len(func.__doc__) > 0)
 
 
+class TestSquareSaveToFile(unittest.TestCase):
+    def test_save_to_file_with_none(self):
+        """Call Square.save_to_file(None) and verify that
+            it does not generate errors."""
+        try:
+            Square.save_to_file(None)
+        except Exception as e:
+            self.fail(f"Unexpected error: {e}")
+
+
 if __name__ == "__main__":
     unittest.main()
