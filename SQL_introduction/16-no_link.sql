@@ -5,4 +5,4 @@
 SELECT score, name
 FROM second_table
 WHERE name IS NOT NULL
-ORDER BY score ASC;
+ORDER BY score DESC;
