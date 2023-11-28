@@ -1,7 +1,12 @@
+#!/usr/bin/python3
+"""Represent a clas Rectangle."""
+
 import sys
 import MySQLdb
 
 def list_states(username, password, database):
+    """Represent a Rectangle."""
+    
     db = MySQLdb.connect(user=username, passwd=password, db=database, host='localhost', port=3306)
     cursor = db.cursor()
 
