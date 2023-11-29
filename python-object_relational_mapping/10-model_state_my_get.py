@@ -24,7 +24,6 @@ def list_states(username, password, database, state_name):
 
     states = session.query(State).filter(State.name.like(state_name)).first()
 
-    print(states)
     if states:
         print(states.id)
     else:
