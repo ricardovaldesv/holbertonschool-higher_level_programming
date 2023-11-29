@@ -14,11 +14,11 @@ def list_states(username, password, database, name_city):
                          host='localhost', port=3306)
     cursor = db.cursor()
 
-    cursor.execute("SELECT * FROM states WHERE name LIKE %s ORDER BY states.id ASC", (name_city,))
-    
-    for state in cursor.fetchall():
-            print(state)
+    cursor.execute("SELECT * FROM states ORDER BY states.id ASC")
 
+    for state in cursor.fetchall():
+        if state[1] == name_city:
+            print('({}, \'{}\')'.format(state[0], state[1]))
 
     cursor.close()
     db.close()
@@ -26,5 +26,6 @@ def list_states(username, password, database, name_city):
 
 if __name__ == "__main__":
     """Get arguments  from command-line"""
-    username, password, database, name_city = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
+    username, password = sys.argv[1], sys.argv[2]
+    database, name_city = sys.argv[3], sys.argv[4]
     list_states(username, password, database, name_city)
