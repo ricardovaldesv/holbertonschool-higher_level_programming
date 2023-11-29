@@ -14,11 +14,11 @@ def list_states(username, password, database, name_city):
                          host='localhost', port=3306)
     cursor = db.cursor()
 
-    query = "SELECT * FROM states WHERE name LIKE %s ORDER BY states.id ASC"
-    cursor.execute(query, (name_city,))
-
+    cursor.execute("SELECT * FROM states WHERE name LIKE %s ORDER BY states.id ASC", (name_city,))
+    
     for state in cursor.fetchall():
-        print(state)
+            print(state)
+
 
     cursor.close()
     db.close()
