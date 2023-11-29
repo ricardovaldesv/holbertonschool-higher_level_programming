@@ -17,15 +17,14 @@ def list_states(username, password, database, state_name):
                     "SELECT cities.name "
                     "FROM cities "
                     "JOIN states ON cities.state_id = states.id "
-                    "WHERE states.name = %s "  # Utilizar %s como marcador de posición
+                    "WHERE states.name = %s "
                     "ORDER BY cities.id ASC",
-                    (state_name,)  # Pasar state_name como argumento adicional
+                    (state_name,)
                     )
-    
+
     results = cursor.fetchall()
     city_names = ', '.join(city[0] for city in results)
     print(city_names)
-
 
     cursor.close()
     db.close()
