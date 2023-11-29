@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""Script that adds the State object “Louisiana” to the database hbtn_0e_6_usa
-"""
+"""script that changes the name of a State object
+    from the database hbtn_0e_6_usa"""
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -9,8 +9,8 @@ import sys
 
 
 def list_states(username, password, database):
-    """Function to adds the State object “Louisiana”
-        to the database hbtn_0e_6_usa"""
+    """Function changes the name of a State object
+        from the database hbtn_0e_6_usa """
 
     engine = create_engine(
         f'mysql+mysqldb://{username}:{password}@localhost:3306/{database}'
@@ -21,16 +21,9 @@ def list_states(username, password, database):
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    add_state = State(name='Louisiana')
-    session.add(add_state)
+    states = session.query(State).filter(State.id.like(2)).first()
+    states.name = 'New Mexico'
     session.commit()
-
-    states = session.query(State).filter(State.name.like('Louisiana')).first()
-
-    if states:
-        print(states.id)
-    else:
-        print('Not found')
 
 
 if __name__ == "__main__":
