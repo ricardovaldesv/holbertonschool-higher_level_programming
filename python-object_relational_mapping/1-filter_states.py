@@ -18,7 +18,8 @@ def list_states(username, password, database):
     cursor.execute(query)
 
     for state in cursor.fetchall():
-        print(state)
+        if state[1][0] == "N":
+            print(state)
 
     cursor.close()
     db.close()
