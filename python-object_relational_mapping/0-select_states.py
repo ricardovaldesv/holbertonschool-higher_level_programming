@@ -20,8 +20,5 @@ def list_states(username, password, database):
     db.close()
 
 if __name__ == "__main__":
-    if len(sys.argv) != 4:
-        print("Usage: python script.py <username> <password> <database>")
-    else:
-        username, password, database = sys.argv[1], sys.argv[2], sys.argv[3]
-        list_states(username, password, database)
+    username, password, database = sys.argv[1], sys.argv[2], sys.argv[3]
+    list_states(username, password, database)
