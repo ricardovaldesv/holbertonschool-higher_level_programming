@@ -7,8 +7,7 @@ import MySQLdb
 
 
 def list_states(username, password, database):
-    """Function to lists all states with a name starting with N
-        (upper N) from the database hbtn_0e_0_usa."""
+    """Function to lists all states with a name starting with"""
 
     db = MySQLdb.connect(user=username, passwd=password, db=database,
                          host='localhost', port=3306)
