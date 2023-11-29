@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""Represent a clas Rectangle."""
+"""A script to list states from database hbtn_0e_0_usa."""
 
 import sys
 import MySQLdb
 
 
 def list_states(username, password, database):
-    """Represent a Rectangle."""
+    """Function to list states from a database hbtn_0e_0_usa."""
 
     db = MySQLdb.connect(user=username, passwd=password, db=database,
                          host='localhost', port=3306)
@@ -23,5 +23,6 @@ def list_states(username, password, database):
 
 
 if __name__ == "__main__":
+    """Get arguments  from command-line"""
     username, password, database = sys.argv[1], sys.argv[2], sys.argv[3]
     list_states(username, password, database)
